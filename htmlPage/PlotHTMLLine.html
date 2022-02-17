@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://finisar-au/departments/labview/styles/chart_style.css">
+ <script language="javascript" type="text/javascript" src="http://finisar-au/departments/labview/scripts/jquery.min.js"></script>
+	<script src="http://finisar-au/departments/labview/scripts/chart.js"></script>
+	<script src="http://finisar-au/departments/labview/scripts/chart_utils.js"></script>
+<script src="http://finisar-au/departments/labview/scripts/json2.js"></script>
+    <script src="http://finisar-au/departments/labview/scripts/jquery(v1.11.3).min.js"></script>
+    <style>
+    	#container{
+            width:95vm;
+            height:95vh;
+            }
+        #canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;  
+	   }
+	    </style>
+</head>
+
+<body>
+<div id="container">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script type="text/javascript">
+//---colour helper
+var color = Chart.helpers.color;
+var plotData ={}  
+
+ // summarise config here --------------------------                   
+        var config = {
+
+// **************** PLOT TYPE***************************
+			type: 'line',
+
+			data: plotData,
+//			 **************** PLOT OPTIONS : THIS PART WILL BE PLOT TYPE DEPENDENT***************************
+options: 
+{
+responsive: true,
+maintainAspectRatio: false,
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				},
+legend: {
+display:false,						
+position: 'right'
+					},
+title: {
+						display:true,
+						text: 'INPUT'
+					},  
+//*************************  ADDITIONAL OPTIONS   ***********************
+				scales: {
+					xAxes: [{
+							scaleLabel: {
+							display: true,
+							labelString: 'INPUT',
+       stacked:true
+						}
+					}],
+					yAxes: [{
+	ticks: {
+							min: 0
+													},
+						scaleLabel: {
+							display: true,
+							labelString: 'INPUT',
+       stacked:true
+       						}
+					}]
+				},
+tooltips: {
+enabled: true}	
+}
+		};
+
+window.onload = function() {
+	  var ctx = document.getElementById('canvas').getContext('2d');
+			window.myChart = new Chart(ctx, config); 
+};
+function UpdatePlot(data) {        
+            var myData = JSON.parse(data.PlotData);
+            config.data=myData;
+
+            config.options.legend.display= data.GenericPlotOptions.LegendDisplay;
+            config.options.legend.position=data.GenericPlotOptions.LegendPosition;            
+           config.options.title.text=data.GenericPlotOptions.GraphTitle;
+
+//*************************  ADDITIONAL OPTIONS UPDATE ***********************
+config.options.scales.yAxes[0].stacked=data.BarPlotOptions.Stacked;
+config.options.scales.xAxes[0].stacked=data.BarPlotOptions.Stacked;
+config.options.scales.xAxes[0].scaleLabel.labelString=data.BarPlotOptions.xLabel;
+config.options.scales.yAxes[0].scaleLabel.labelString=data.BarPlotOptions.yLabel;
+config.options.scales.yAxes[0].scaleLabel.display=data.BarPlotOptions.DisplayYLabel;
+config.options.scales.xAxes[0].scaleLabel.display=data.BarPlotOptions.DisplayXLabel;
+
+//*************************  UPDATE PLOT ***********************
+window.myChart.update();
+
+//*************************  WAIT FOR UPDATE EVENT ***********************
+     }
+	</script>
+</body>
+</html>
