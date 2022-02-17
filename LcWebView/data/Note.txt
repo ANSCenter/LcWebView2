@@ -1,3 +1,0 @@
-1. Add this folder into the PATH variable (Enviroment Variables -> Users variables) --> Will do automatically in Create function
-
-2. Install MicrosoftEdgeWebView2RuntimeInstallerX64 (post installation action)
