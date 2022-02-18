@@ -1,0 +1,15 @@
+{
+    "action": "Update",
+    "PlotData": "{\"labels\":[\"Q1\",\"Q2\",\"Q3\",\"Q4\"],\"datasets\":[{\"label\":\"DLP2\",\"backgroundColor\":\"#0059FF\",\"borderColor\":\"#0059FF\",\"borderWidth\":1,\"data\":[{x:-10,y:0},{x:0,y:10},{x:10,y:5},{x:0,y:5.5}]}]}",
+    "GenericPlotOptions": {
+        "GraphTitle": "Test New Title",
+        "LegendDisplay": true,
+        "LegendPosition": "right"
+    },
+    "ScatterPlotOptions": {
+        "xLabel": "Quaters",
+        "yLabel": "Volume",
+        "DisplayXLabel": true,
+        "DisplayYLabel": true
+    }
+};
