@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="http://finisar-au/departments/labview/styles/chart_style.css">
- <script language="javascript" type="text/javascript" src="http://finisar-au/departments/labview/scripts/jquery.min.js"></script>
-	<script src="http://finisar-au/departments/labview/scripts/chart.js"></script>
-	<script src="http://finisar-au/departments/labview/scripts/chart_utils.js"></script>
-<script src="http://finisar-au/departments/labview/scripts/json2.js"></script>
-    <script src="http://finisar-au/departments/labview/scripts/jquery(v1.11.3).min.js"></script>
-    <style>
+	<head>
+		<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+					<link rel="stylesheet" type="text/css" href="http://finisar-au/departments/labview/styles/chart_style.css">
+						<script language="javascript" type="text/javascript" src="http://finisar-au/departments/labview/scripts/jquery.min.js"/>
+						<script src="http://finisar-au/departments/labview/scripts/chart.js"/>
+						<script src="http://finisar-au/departments/labview/scripts/chart_utils.js"/>
+						<script src="http://finisar-au/departments/labview/scripts/json2.js"/>
+						<script src="http://finisar-au/departments/labview/scripts/jquery(v1.11.3).min.js"/>
+						<style>
     	#container{
             width:95vm;
             height:95vh;
@@ -21,45 +21,36 @@
 		-ms-user-select: none;  
 	   }
 	    </style>
-</head>
-
-<body>
-<div id="container">
-		<canvas id="canvas"></canvas>
-	</div>
-	<script type="text/javascript">
-//---colour helper
+					</head>
+					<body>
+						<div id="container">
+							<canvas id="canvas"/>
+						</div>
+						<script type="text/javascript">
 var color = Chart.helpers.color;
 var plotData ={}  
 
- // summarise config here --------------------------                   
-        var config = {
-
-// **************** PLOT TYPE***************************
+var config = {
 			type: 'line',
-
 			data: plotData,
-//			 **************** PLOT OPTIONS : THIS PART WILL BE PLOT TYPE DEPENDENT***************************
-options: 
-{
-responsive: true,
-maintainAspectRatio: false,
-				animation: {
-					animateScale: true,
-					animateRotate: true
-				},
-legend: {
-display:false,						
-position: 'right'
-					},
-title: {
-						display:true,
-						text: 'INPUT'
-					},  
-//*************************  ADDITIONAL OPTIONS   ***********************
-				scales: {
-					xAxes: [{
-							scaleLabel: {
+			options: {
+						responsive: true,
+						maintainAspectRatio: false,
+						animation: {
+									animateScale: true,
+									animateRotate: true
+								},
+						legend: {
+									display:false,						
+									position: 'right'
+								},
+						title:  {
+									display:true,
+									text: 'INPUT'
+							    },  
+						scales: {
+								xAxes: [{
+										scaleLabel: {
 							display: true,
 							labelString: 'INPUT',
        stacked:true
@@ -101,11 +92,9 @@ config.options.scales.yAxes[0].scaleLabel.labelString=data.BarPlotOptions.yLabel
 config.options.scales.yAxes[0].scaleLabel.display=data.BarPlotOptions.DisplayYLabel;
 config.options.scales.xAxes[0].scaleLabel.display=data.BarPlotOptions.DisplayXLabel;
 
-//*************************  UPDATE PLOT ***********************
 window.myChart.update();
 
-//*************************  WAIT FOR UPDATE EVENT ***********************
      }
 	</script>
-</body>
-</html>
+					</body>
+				</html>
