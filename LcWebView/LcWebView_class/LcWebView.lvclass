@@ -153,6 +153,15 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1082143248</Property>
 		</Item>
+		<Item Name="LcWebView_LinePlot_Example.vi" Type="VI" URL="../examples/LcWebView_LinePlot_Example.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"A!!!!!A!%!!!!6!$Q!!Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$!!"Y!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!"!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">1073774912</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082143248</Property>
+		</Item>
 	</Item>
 	<Item Name="data" Type="Folder">
 		<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="../../data/Microsoft.Web.WebView2.Core.dll"/>
@@ -220,6 +229,15 @@
 		</Item>
 		<Item Name="PlotRef.ctl" Type="VI" URL="../ctrls/PlotRef.ctl">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#E!!!!!Q"+!0%!!!!!!!!!!B&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=QR1&lt;'^U6(FQ:3ZD&gt;'Q!)U!7!!-$9G&amp;S"'RJ&lt;G5$='FF!!!)5'RP&gt;&amp;2Z='5!!":!-0````]-5'RP&gt;&amp;2F&lt;8"M982F!!!]!0%!!!!!!!!!!B&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=QN1&lt;'^U5G6G,G.U&lt;!!71&amp;!!!A!!!!%(1WRV=X2F=A!"!!)!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">1048576</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082143232</Property>
+		</Item>
+		<Item Name="LinePlotOption.ctl" Type="VI" URL="../ctrls/LinePlotOption.ctl">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#J!!!!"A!11$$`````"HB-97*F&lt;!!!%%!Q`````Q:Z4'&amp;C:7Q!!"*!)1V%;8.Q&lt;'&amp;Z7%RB9G6M!"*!)1V%;8.Q&lt;'&amp;Z75RB9G6M!!R!)1&gt;4&gt;'&amp;D;W6E!&amp;%!]1!!!!!!!!!#%5RD6W6C6GFF&gt;SZM&gt;G.M98.T%ERJ&lt;G61&lt;'^U4X"U;7^O,G.U&lt;!!E1&amp;!!"1!!!!%!!A!$!!1/1G&amp;S5'RP&gt;%^Q&gt;'FP&lt;H-!!!%!"1!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">1048576</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
@@ -346,5 +364,14 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082929680</Property>
+	</Item>
+	<Item Name="DrawLinePlot.vi" Type="VI" URL="../DrawLinePlot.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!.%!!!!'1!K1(!!(A!!%R&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=Q!-=G6G:8*F&lt;G.F)'FO!!!11$$`````"F.U=GFO:Q!!&amp;%"!!!(`````!!%(7%RB9G6M=Q!.1!I!"UZV&lt;76S;7-!(E"!!!(`````!!-14'FO:6"M&lt;X1O2'&amp;U98.F&gt;!!!*%"!!!(`````!!%74'FO:6"M&lt;X1O2'&amp;U98.F&gt;%RB9G6M=Q!!"!!!!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!":!5!!$!!=!#!!*#%6S=G^S)%FO!!!51$$`````#E&gt;S98"I6'FU&lt;'5!!"*!)1V-:7&gt;F&lt;G2%;8.Q&lt;'&amp;Z!&amp;Y!]1!!!!!!!!!#%5RD6W6C6GFF&gt;SZM&gt;G.M98.T%ERF:W6O:&amp;"P=WFU;7^O,G.U&lt;!!R1"9!"!.U&lt;X!&amp;=GFH;(1%&lt;'6G&gt;!:C&lt;X2U&lt;WU!$ERF:W6O:&amp;"P=WFU;7^O!!"5!0%!!!!!!!!!!B&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=R6(:7ZF=GFD5'RP&gt;%^Q&gt;'FP&lt;CZD&gt;'Q!*%"1!!-!#Q!-!!U32W6O:8*J9V"M&lt;X20=(2J&lt;WZT!!!01!=!#5.P&lt;'^S)%*P?!!A1%!!!@````]!$R.#98*1&lt;'^U,F"M&lt;X2$&lt;WRP&gt;8*T!""!-0````]'?%RB9G6M!!!11$$`````"HF-97*F&lt;!!!%E!B$52J=X"M98F94'&amp;C:7Q!%E!B$52J=X"M98F:4'&amp;C:7Q!4Q$R!!!!!!!!!!)24'.8:7*7;76X,GRW9WRB=X-34'FO:6"M&lt;X20=(2J&lt;WYO9X2M!#*!5!!%!"%!%A!4!"1/1G&amp;S5'RP&gt;%^Q&gt;'FP&lt;H-!!#J!=!!?!!!4%5RD6W6C6GFF&gt;SZM&gt;G.M98.T!!VS:7:F=G6O9W5A&lt;X6U!":!5!!$!!=!#!!*#56S=G^S)%^V&gt;!#%!0!!&amp;!!!!!)!"!!&amp;!!9!#A!/!"!!&amp;1!'!!9!"A!'!!9!&amp;A!'!!9!"A!'!"=$!!%1!!#3!!!#%!!!!B!!!!)1!!!!!!!!!!I!!!!1!!!#%!!!!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)U!!!!!!!!!!!!!!!!!!!!!!!!!$15!!!!"!"A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
 </LVClass>
