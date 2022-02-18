@@ -47,41 +47,65 @@
                         text: "INPUT",
                     },
                     cutoutPercentage: 0,
-                    tooltips: {
-                        enabled: true,
+                    // tooltips: {
+                    //     callbacks: {
+                    //         label: function(context){
+                    //             console.log('lable');
+                    //         },
+
+                    //        /*  title: function (context) {
+                    //             console.log('title');
+                    //             var Title = datasets[tooltipItems[0].datasetIndex].label;
+                    //             return Title;
+                    //         },
+                    //         footer: function (context) {
+                    //             console.log('footer');
+                    //             var ratio = 0;
+                    //             var sum = 0;
+                    //             var i = 0;
+                    //             var length =
+                    //                 data.datasets[tooltipItems[0].datasetIndex].data.length;
+                    //             for (i = 0; i < length; i++) {
+                    //                 sum += data.datasets[tooltipItems[0].datasetIndex].data[i];
+                    //             }
+                    //             tooltipItems.forEach(function (tooltipItem) {
+                    //                 ratio =
+                    //                     (100 *
+                    //                         data.datasets[tooltipItem.datasetIndex].data[
+                    //                         tooltipItem.index
+                    //                         ]) /
+                    //                     sum;
+                    //                 ratio = ratio.toFixed(1);
+                    //             });
+                    //             return "ratio: " + ratio + "%";
+                    //         }, */
+                    //     },
+                    //     footerFontStyle: "normal"
+                    // }
+                    tooltip: {
                         callbacks: {
-                            title: function (tooltipItems, data) {
-                                console.log('title');
-                                var Title = data.datasets[tooltipItems[0].datasetIndex].label;
+                            title: function(context) {
+                                var Title = context[0].dataset.label;
                                 return Title;
                             },
-                            // Use the footer callback to display the % of total of the items showing in the tooltip
-                            footer: function (tooltipItems, data) {
-                                console.log('footer');
+                            footer: function (context) {
                                 var ratio = 0;
                                 var sum = 0;
                                 var i = 0;
-                                var length =
-                                    data.datasets[tooltipItems[0].datasetIndex].data.length;
+                                var length =context[0].dataset.data.length;
                                 for (i = 0; i < length; i++) {
-                                    sum += data.datasets[tooltipItems[0].datasetIndex].data[i];
+                                    sum += context[0].dataset.data[i];
                                 }
-                                tooltipItems.forEach(function (tooltipItem) {
-                                    ratio =
-                                        (100 *
-                                            data.datasets[tooltipItem.datasetIndex].data[
-                                            tooltipItem.index
-                                            ]) /
-                                        sum;
+                            
+
+                                    ratio =(100 *context[0].parsed)/sum;
                                     ratio = ratio.toFixed(1);
-                                });
                                 return "ratio: " + ratio + "%";
-                            },
-                        },
-                        footerFontStyle: "normal",
+                            }
+                        } ,
+                        footerFontStyle: "normal"
                     }
                 }
-
             }
         };
 
