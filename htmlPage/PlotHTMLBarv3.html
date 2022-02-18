@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script type="text/javascript">
+        var color = Chart.helpers.color;
+        var plotData = {};
+
+        var config = {
+            type: "bar",
+            data: plotData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                animation: {
+                    animateScale: true,
+                    animateRotate: true,
+                },
+                legend: {
+                    display: true,
+                    position: "right",
+                },
+                title: {
+                    display: true,
+                    text: "INPUT",
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                tooltips: {
+                    enabled: true,
+                },
+            },
+        };
+
+        window.onload = function () {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myChart = new Chart(ctx, config);
+            data = {
+                "action": "Update",
+                "PlotData": "{\"labels\":[\"Q1\",\"Q2\",\"Q3\",\"Q4\"],\"datasets\":[{\"label\":\"DLP2\",\"backgroundColor\":\"#0059FF\",\"borderColor\":\"#0059FF\",\"borderWidth\":1,\"data\":[30,5,7,89]},{\"label\":\"SLP\",\"backgroundColor\":\"#FF88C2\",\"borderColor\":\"#FF88C2\",\"borderWidth\":1,\"data\":[1,9,5,6]}]}",
+                "GenericPlotOptions": {
+                    "GraphTitle": "Test New Title",
+                    "LegendDisplay": true,
+                    "LegendPosition": "right"
+                },
+                "BarPlotOptions": {
+                    "xLabel": "Quaters",
+                    "yLabel": "Volume",
+                    "DisplayXLabel": true,
+                    "DisplayYLabel": true,
+                    "Stacked": true
+                }
+
+            }
+            UpdatePlot(data)
+        };
+
+        function UpdatePlot(data) {
+            var myData = JSON.parse(data.PlotData);
+            config.data = myData;
+            config.options.legend.display = data.GenericPlotOptions.LegendDisplay;
+            config.options.legend.position = data.GenericPlotOptions.LegendPosition;
+            config.options.title.text = data.GenericPlotOptions.GraphTitle;
+            window.myChart.update();
+        }
+    </script>
+</body>
+
+</html>

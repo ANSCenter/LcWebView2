@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <body>
+    <div id="container">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script type="text/javascript">
+      var color = Chart.helpers.color;
+      var plotData = {};
+      var config = {
+        type: "line",
+        data: plotData,
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          animation: {
+            animateScale: true,
+            animateRotate: true,
+          },
+          legend: {
+            display: false,
+            position: "right",
+          },
+          title: {
+            display: true,
+            text: "INPUT",
+          },
+          tooltips: {
+            enabled: true,
+          },
+        },
+      };
+      window.onload = function () {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myChart = new Chart(ctx, config);
+        UpdatePlot();
+      };
+      function UpdatePlot() {
+        testdata = {
+          labels: ["January", "February", "March", "April", "May", "June"],
+          datasets: [
+            {
+              label: "My First dataset",
+              backgroundColor: "rgb(255, 99, 132)",
+              borderColor: "rgb(255, 99, 132)",
+              data: [0, 10, 5, 2, 20, 30, 45],
+            },
+          ],
+        };
+        //var myData = JSON.parse(testdata);
+        config.data = testdata;
+
+        // config.options.legend.display = data.GenericPlotOptions.LegendDisplay;
+        // config.options.legend.position = data.GenericPlotOptions.LegendPosition;
+        // config.options.title.text = data.GenericPlotOptions.GraphTitle;
+
+        //config.options.scales.yAxes[0].stacked = data.BarPlotOptions.Stacked;
+        //config.options.scales.xAxes[0].stacked = data.BarPlotOptions.Stacked;
+        //config.options.scales.xAxes[0].scaleLabel.labelString = data.BarPlotOptions.xLabel;
+        //config.options.scales.yAxes[0].scaleLabel.labelString = data.BarPlotOptions.yLabel;
+        //config.options.scales.yAxes[0].scaleLabel.display = data.BarPlotOptions.DisplayYLabel;
+        //config.options.scales.xAxes[0].scaleLabel.display = data.BarPlotOptions.DisplayXLabel;
+        window.myChart.update();
+      }
+    </script>
+  </body>
+</html>
