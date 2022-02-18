@@ -24,8 +24,9 @@
     <script type="text/javascript">
         var color = Chart.helpers.color;
         var plotData = {};
+
         var config = {
-            type: "bubble",
+            type: "polarArea",
             data: plotData,
             options: {
                 responsive: true,
@@ -48,16 +49,14 @@
                     tooltips: {
                         enabled: true,
                     }     
-                },
+                }
+
             }
         };
 
         window.onload = function () {
             var ctx = document.getElementById("canvas").getContext("2d");
             window.myChart = new Chart(ctx, config);
-            
-          data={"action":"Update","PlotData":"{\"labels\":[\"Q1\",\"Q2\",\"Q3\",\"Q4\"],\"datasets\":[{\"label\":\"DLP2\",\"backgroundColor\":\"#00590F\",\"borderColor\":\"#0059FF\",\"borderWidth\":1,\"data\":[{\"x\":20.000000,\"y\":30.000000,\"r\":15.000000},{\"x\":40.000000,\"y\":10.000000,\"r\":10.000000}]}]}","GenericPlotOptions":{"GraphTitle":"Test New Title","LegendDisplay":true,"LegendPosition":"right"},"BubbleOptions":{"xLabel":"Quaters","yLabel":"Volume","DisplayXLabel":true,"DisplayYLabel":true}}
-            UpdatePlot(data);
         };
 
         function UpdatePlot(data) {
@@ -71,6 +70,4 @@
     </script>
 </body>
 </html>
-
-
 
