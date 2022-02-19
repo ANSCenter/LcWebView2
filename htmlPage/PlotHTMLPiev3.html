@@ -47,44 +47,9 @@
                         text: "INPUT",
                     },
                     cutoutPercentage: 0,
-                    // tooltips: {
-                    //     callbacks: {
-                    //         label: function(context){
-                    //             console.log('lable');
-                    //         },
-
-                    //        /*  title: function (context) {
-                    //             console.log('title');
-                    //             var Title = datasets[tooltipItems[0].datasetIndex].label;
-                    //             return Title;
-                    //         },
-                    //         footer: function (context) {
-                    //             console.log('footer');
-                    //             var ratio = 0;
-                    //             var sum = 0;
-                    //             var i = 0;
-                    //             var length =
-                    //                 data.datasets[tooltipItems[0].datasetIndex].data.length;
-                    //             for (i = 0; i < length; i++) {
-                    //                 sum += data.datasets[tooltipItems[0].datasetIndex].data[i];
-                    //             }
-                    //             tooltipItems.forEach(function (tooltipItem) {
-                    //                 ratio =
-                    //                     (100 *
-                    //                         data.datasets[tooltipItem.datasetIndex].data[
-                    //                         tooltipItem.index
-                    //                         ]) /
-                    //                     sum;
-                    //                 ratio = ratio.toFixed(1);
-                    //             });
-                    //             return "ratio: " + ratio + "%";
-                    //         }, */
-                    //     },
-                    //     footerFontStyle: "normal"
-                    // }
                     tooltip: {
                         callbacks: {
-                            title: function(context) {
+                            title: function (context) {
                                 var Title = context[0].dataset.label;
                                 return Title;
                             },
@@ -92,30 +57,24 @@
                                 var ratio = 0;
                                 var sum = 0;
                                 var i = 0;
-                                var length =context[0].dataset.data.length;
+                                var length = context[0].dataset.data.length;
                                 for (i = 0; i < length; i++) {
                                     sum += context[0].dataset.data[i];
                                 }
-                            
-
-                                    ratio =(100 *context[0].parsed)/sum;
-                                    ratio = ratio.toFixed(1);
+                                ratio = (100 * context[0].parsed) / sum;
+                                ratio = ratio.toFixed(1);
                                 return "ratio: " + ratio + "%";
                             }
-                        } ,
+                        },
                         footerFontStyle: "normal"
                     }
                 }
             }
         };
-
         // run plot function here --------------------------
         window.onload = function () {
             var ctx = document.getElementById("canvas").getContext("2d");
             window.myChart = new Chart(ctx, config);
-            
-            data = { "action": "Update", "PlotData": "{\"labels\":[\"DLP2\",\"SLP\",\"DWP\",\"DLP3\"],\"datasets\":[{\"label\":\"Q1\",\"backgroundColor\":[\"#5C8260\",\"#FF88C2\",\"#2400B4\",\"#FFF242\"],\"data\":[6.000000,70.000000,86.000000,28.000000]},{\"label\":\"Q2\",\"backgroundColor\":[\"#5C8260\",\"#FF88C2\",\"#2400B4\",\"#FFF242\"],\"data\":[13.000000,47.000000,73.000000,85.000000]}]}", "GenericPlotOptions": { "GraphTitle": "Test Title", "LegendDisplay": true, "LegendPosition": "top" }, "PiePlotOptions": { "cutoutPercentage": 10 } };
-            UpdatePlot(data);
         };
         function UpdatePlot(data) {
             var myData = JSON.parse(data.PlotData);
@@ -128,5 +87,4 @@
         }
     </script>
 </body>
-
 </html>
