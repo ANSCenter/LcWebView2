@@ -243,15 +243,24 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 		</Item>
+		<Item Name="DialogExamples.vi" Type="VI" URL="../examples/DialogExamples.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$N!!!!"Q!%!!!!$%!B"H.U982V=Q!!#U!$!!2D&lt;W2F!!!11$$`````"H.P&gt;8*D:1!!)%"1!!-!!1!#!!-4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!71&amp;!!!Q!"!!)!!QFF=H*P=C"P&gt;81!B!$Q!"1!!!!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&amp;!A!"%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!U&amp;!!!!!1!'!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082143232</Property>
+		</Item>
 	</Item>
 	<Item Name="data" Type="Folder">
-		<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="../../data/Microsoft.Web.WebView2.Core.dll"/>
-		<Item Name="Microsoft.Web.WebView2.Core.xml" Type="Document" URL="../../data/Microsoft.Web.WebView2.Core.xml"/>
-		<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="../../data/Microsoft.Web.WebView2.WinForms.dll"/>
-		<Item Name="Microsoft.Web.WebView2.WinForms.xml" Type="Document" URL="../../data/Microsoft.Web.WebView2.WinForms.xml"/>
-		<Item Name="Microsoft.Web.WebView2.Wpf.dll" Type="Document" URL="../../data/Microsoft.Web.WebView2.Wpf.dll"/>
-		<Item Name="Microsoft.Web.WebView2.Wpf.xml" Type="Document" URL="../../data/Microsoft.Web.WebView2.Wpf.xml"/>
-		<Item Name="WebView2Loader.dll" Type="Document" URL="../../data/WebView2Loader.dll"/>
+		<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="../data/Microsoft.Web.WebView2.Core.dll"/>
+		<Item Name="Microsoft.Web.WebView2.Core.xml" Type="Document" URL="../data/Microsoft.Web.WebView2.Core.xml"/>
+		<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="../data/Microsoft.Web.WebView2.WinForms.dll"/>
+		<Item Name="Microsoft.Web.WebView2.WinForms.xml" Type="Document" URL="../data/Microsoft.Web.WebView2.WinForms.xml"/>
+		<Item Name="Microsoft.Web.WebView2.Wpf.dll" Type="Document" URL="../data/Microsoft.Web.WebView2.Wpf.dll"/>
+		<Item Name="Microsoft.Web.WebView2.Wpf.xml" Type="Document" URL="../data/Microsoft.Web.WebView2.Wpf.xml"/>
+		<Item Name="WebView2Loader.dll" Type="Document" URL="../data/WebView2Loader.dll"/>
 	</Item>
 	<Item Name="ctrls" Type="Folder">
 		<Item Name="ErrorCode.ctl" Type="VI" URL="../ctrls/ErrorCode.ctl">
@@ -470,6 +479,17 @@
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+		</Item>
+	</Item>
+	<Item Name="Dialogs" Type="Folder">
+		<Item Name="SimpleDialog.vi" Type="VI" URL="../Dialogs/SimpleDialog.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;"!!!!#1!K1(!!(A!!%R&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=Q!-=G6G:8*F&lt;G.F)'FO!!!%!!!!$%!B"H.U982V=Q!!#U!$!!2D&lt;W2F!!!11$$`````"H.P&gt;8*D:1!!)%"1!!-!!A!$!!14:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!K1(!!(A!!%R&amp;-9V&gt;F9F:J:8=O&lt;(:D&lt;'&amp;T=Q!.=G6G:8*F&lt;G.F)'^V&gt;!!71&amp;!!!Q!#!!-!"!FF=H*P=C"P&gt;81!B!$Q!"1!!!!"!!%!!1!"!!5!!1!"!!%!!1!"!!%!!1!"!!9!!1!"!!%!!1!(!Q!"%!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#.!!!!!!!!!!!!!!!!!!!!!!!!!!U&amp;!!!!!1!)!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
