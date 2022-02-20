@@ -61,10 +61,10 @@
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Random Number - Within Range__ogtk.vi" Type="VI" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2021/user.lib/_OpenG.lib/numeric/numeric.llb/Random Number - Within Range__ogtk.vi"/>
-				<Item Name="Random Number Within Range - I32__ogtk.vi" Type="VI" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2021/user.lib/_OpenG.lib/numeric/numeric.llb/Random Number Within Range - I32__ogtk.vi"/>
-				<Item Name="Random Number Within Range - DBL__ogtk.vi" Type="VI" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2021/user.lib/_OpenG.lib/numeric/numeric.llb/Random Number Within Range - DBL__ogtk.vi"/>
-				<Item Name="Random Number Within Range__ogtk.vi" Type="VI" URL="../../../../../../../../Program Files/National Instruments/LabVIEW 2021/user.lib/_OpenG.lib/numeric/numeric.llb/Random Number Within Range__ogtk.vi"/>
+				<Item Name="Random Number - Within Range__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/numeric/numeric.llb/Random Number - Within Range__ogtk.vi"/>
+				<Item Name="Random Number Within Range - I32__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/numeric/numeric.llb/Random Number Within Range - I32__ogtk.vi"/>
+				<Item Name="Random Number Within Range__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/numeric/numeric.llb/Random Number Within Range__ogtk.vi"/>
+				<Item Name="Random Number Within Range - DBL__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/numeric/numeric.llb/Random Number Within Range - DBL__ogtk.vi"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -72,8 +72,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="../data/Microsoft.Web.WebView2.WinForms.dll"/>
-			<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="../data/Microsoft.Web.WebView2.Core.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
