@@ -59,9 +59,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
-				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
-				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
-				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/Base64/Base64 Support.lvlib"/>
 				<Item Name="Open URL in Default Browser.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser.vi"/>
 				<Item Name="Open URL in Default Browser (string).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (string).vi"/>
 				<Item Name="Open URL in Default Browser core.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser core.vi"/>
@@ -81,8 +78,8 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2020/user.lib/_LabVIEWCommon/LcWebView/LcWebView_class/data/Microsoft.Web.WebView2.WinForms.dll"/>
-			<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2020/user.lib/_LabVIEWCommon/LcWebView/LcWebView_class/data/Microsoft.Web.WebView2.Core.dll"/>
+			<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="../../../../Program Files/National Instruments/LabVIEW 2020/user.lib/_LabVIEWCommon/LcWebView/LcWebView_class/data/Microsoft.Web.WebView2.WinForms.dll"/>
+			<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="../../../../Program Files/National Instruments/LabVIEW 2020/user.lib/_LabVIEWCommon/LcWebView/LcWebView_class/data/Microsoft.Web.WebView2.Core.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
