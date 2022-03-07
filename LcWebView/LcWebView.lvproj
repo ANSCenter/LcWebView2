@@ -83,6 +83,47 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Browser Example 1" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{D3661FEF-F70F-4A1A-8F55-BD9E59496878}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{1C502277-ACE2-4942-9321-E90388A719D6}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{3319B30E-CE2B-4E5E-83A9-915BDB5DED47}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Browser Example 1</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Browser Example 1</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{B8ED0EB0-7917-4302-A141-F181B5A298EC}</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Browser Example 1.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Browser Example 1/Browser Example 1.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Browser Example 1/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FA4397A6-6D51-4188-9ADC-D882F1AA220A}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LcWebView.lvclass/examples/Example Plots.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Finisar Australia</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_internalName" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Finisar Australia</Property>
+				<Property Name="TgtF_productName" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{B7CFF680-B23D-45F4-BEA8-925D28ECE448}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Browser Example 1.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
