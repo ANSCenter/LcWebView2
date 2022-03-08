@@ -78,6 +78,8 @@
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="eventsource.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventsource.ctl"/>
+				<Item Name="lveventtype.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/lveventtype.ctl"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -168,6 +170,49 @@
 				<Property Name="TgtF_productName" Type="Str">Browser Example 1</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{4E21966A-AD54-4D2C-A9ED-D9E61F3AD231}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Browser Example 4.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Dialog Example 1" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{05460608-F2E1-48FC-A89E-3A6A9A2DCF5B}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{99BE3152-5274-4CE3-82B0-1B77004A4CF5}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{D48114E2-A551-4763-942F-11BB96E74ABF}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Dialog Example 1</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Dialog Example 1</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{19D95518-B9B8-4B2F-A0E2-4A5897ABDF70}</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Dialog Example 1.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Dialog Example 1/Dialog Example 1.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Dialog Example 1/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F5A6922E-DA9C-4B9A-8FAA-EC4A82FA3AE3}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LcWebView.lvclass/examples/Example Plots.vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/LcWebView.lvclass/examples/LcWebView_Dialog1.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">Finisar Australia</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_internalName" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Finisar Australia</Property>
+				<Property Name="TgtF_productName" Type="Str">Browser Example 1</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{A90DACA4-4C3E-45D7-A148-F33F47C673E0}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Dialog Example 1.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
